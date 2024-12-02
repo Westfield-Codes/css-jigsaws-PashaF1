@@ -10,17 +10,28 @@
    <style>
 
     /* Add these styles in order */
-     
+
     /* Center the title "High Factor Times Tables */
+h2 {
+  text-align:center;
+}
 
     /* Left-align each of the equations */
-
+li{
+  text-align:left;
+}
     /* Display each table in a row with inline-block */
-    
+    li{
+      display:inline-block;
+    }
     /* Put a rounded 2px black border box around all tables */
-    
+    ol#tables > li{
+      border:2px solid black;
+    }
     /* underline the top numbers red */
-    
+    th{
+      text-decoration: underline solid red 1px;
+    }
     /* go night mode on hovers over each timestable, but not the parent  */
   
     /* 20 px space below the last equation in each table */
