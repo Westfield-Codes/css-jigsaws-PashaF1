@@ -25,23 +25,44 @@ li{
       display:inline-block;
     }
     /* Put a rounded 2px black border box around all tables */
-    ol#tables > li{
+    #timestables, #tables ol {
       border:2px solid black;
+      border-radius: 20px;
     }
+
     /* underline the top numbers red */
-    th{
-      text-decoration: underline solid red 1px;
+    h4{
+      border-bottom: 2px solid red;
     }
     /* go night mode on hovers over each timestable, but not the parent  */
-  
+    li ol:hover{
+      background:black ;
+      color:white;
+    }
     /* 20 px space below the last equation in each table */
-
+    li ol{
+      padding-bottom: 20px;
+    }
     /* add a top margin of 20px on each table, but not the parent */
 
+    /* #tables > li {
+      margin-bottom: 20px;
+    } */
+     li{
+      margin-bottom: 20px;
+     }
+     li li {
+      margin-bottom:0px;
+      margin-left:-20px;
+     }
      /* subtract 20px from left margins of each child table, add it to the right margins */
-
+    /* #timestables {
+      padding-bottom:20px;
+    } */
     /* put 25px padding at the bottom of the parent  */
-
+    ol{
+    text-align: center;
+  }
    </style>
 </head>
 
